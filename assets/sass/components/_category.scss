@@ -1,0 +1,31 @@
+@import "../base/mixins";
+@import "../layout/layout";
+
+.category {
+  @include margin(0, 0, 6rem, 0);
+  text-align: center;
+  &-container {
+    @extend%container;
+    @include gridCols(3);
+    @media screen and (max-width: 768px) {
+      @include margin(0, 0, 2rem, 0);
+
+      @include gridCols(2);
+    }
+    @media screen and (max-width: 425px) {
+      @include gridCols(1);
+    }
+  }
+  &-data {
+    transition: 0.5s;
+    &:hover {
+      & img {
+        transform: translateY(-0.7rem);
+      }
+    }
+    &-description {
+      color: $text-color;
+      @include margin(0, auto, 0, auto);
+    }
+  }
+}

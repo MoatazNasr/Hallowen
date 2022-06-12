@@ -1,0 +1,39 @@
+@import "../base/mixins";
+
+.swiper {
+  // home swiper
+  &-slide:nth-of-type(3) {
+    .home-data:nth-of-type(2) {
+      @include margin(2.95rem, 0, 0, 0);
+    }
+  }
+  &-slide:nth-of-type(4) {
+    .home-data:nth-of-type(2) {
+      @include margin(0, 0, 1.5rem, 0);
+    }
+  }
+  &-slide {
+    overflow: hidden;
+  }
+  &-pagination {
+    position: initial;
+    @include margin(0.5rem, 0, 0, 0);
+  }
+  &-pagination-bullet {
+    font-size: 3rem;
+    opacity: 1;
+    background: white;
+    &:hover {
+      background-color: $main-color-light;
+    }
+  }
+  &-pagination-bullet-active {
+    width: 1.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    &:hover {
+      background-color: white;
+    }
+  }
+  //
+}

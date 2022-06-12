@@ -1,0 +1,82 @@
+@import "../base/mixins";
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+// navbar
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  @include margin(0, 2rem, 0, 2rem);
+  // nav menu
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    a {
+      color: white;
+    }
+  }
+  &-menu {
+    padding: 0;
+    @include margin(0, 0, 0, 0);
+    @media screen and (max-width: 820px) {
+      display: grid;
+      place-content: center;
+      position: fixed;
+      top: -120%;
+      left: 0;
+      right: 0;
+      border-radius: 1rem;
+      padding: 2rem 3rem;
+      @include margin(2.5rem, auto, 2.5rem, auto);
+      background: $container-bg;
+      transition: all 0.5s;
+    }
+    &-show {
+      top: -1.8rem;
+      transition: all 0.5s;
+    }
+  }
+  //   nav items & links
+  &-logo,
+  &-link,
+  &-item {
+    @include margin(0.5rem, 0, 0.5rem, 0);
+    list-style: none;
+    color: #ffff;
+    position: relative;
+  }
+
+  &-item {
+    padding: 0 1.8rem;
+    &:hover::after {
+      @include animation();
+    }
+    &:nth-of-type(5):hover::after {
+      border: none;
+    }
+  }
+  &-link-active::after {
+    content: ".";
+    width: 100%;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: -1.5rem;
+    color: var(--title-color);
+    left: 0;
+  }
+  //change background of navbar on scrolling (y-axis)
+  &-changeBackground {
+    @include margin(0, auto, 0, auto);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-radius: 1rem;
+    background: $container-bg;
+  }
+}

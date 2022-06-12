@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
+//  SCSS VARIABLES
+
+// COLORS
+$main-color: hsl(14, 91%, 50%);
+$main-color-light: hsl(14, 100%, 60%);
+$title-color: #ffff;
+$text-color: hsl(14, 4%, 80%);
+$text-color-light: hsl(14, 4%, 85%);
+$body-bg: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
+$container-bg: linear-gradient(
+  145deg,
+  hsl(104, 28%, 35%) 0%,
+  hsl(58, 28%, 35%) 100%
+);
+// TYPOGRAPHY
+// ff -> font family , fs -> font size
+$ff-poppins: "Poppins", sans-serif;
+$ff-rubik: "Rubik Beastly", cursive;
+$fs-biggest-text: clamp(2rem, 4.7vw, 7rem);
+// 2rem -> 32px , 3rem -> 48px
+$fs-big-text: clamp(1.25rem, 3.5vw, 1.75rem);
+// 1.25rem -> 20px , 1.75rem -> 28px
+$fs-less-big-text: clamp(1.125rem, 3vw, 1.25rem);
+// 1.125rem -> 18px , 1.25rem -> 20px
+$fs-normal-text: clamp(0.9375rem, 2.7vw, 1rem);
+// 0.9375rem -> 15px , 1rem -> 16px
+$fs-small-text: clamp(0.8125rem, 2.3vw, 0.875rem);
+// 0.8125rem -> 13px , 0.875rem -> 14px

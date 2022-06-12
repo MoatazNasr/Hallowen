@@ -1,0 +1,41 @@
+@import "../base/mixins";
+.logo {
+  &-skull {
+    width: $fs-big-text;
+    display: inline;
+  }
+  &-spider {
+    position: fixed;
+    top: 0.8rem;
+    left: 0rem;
+    z-index: 5;
+    width: 28%;
+    display: none;
+  }
+}
+
+.duo {
+  margin-top: 3rem;
+}
+
+// layout
+
+%container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  column-gap: 3rem;
+}
+.flex {
+  display: flex;
+}
+.show {
+  display: inline-block;
+}
+.section-title {
+  font-size: $fs-big-text;
+  @include margin(0, 0, 2rem, 0);
+}

@@ -1,0 +1,30 @@
+@import "../base/mixins";
+@import "../layout/layout";
+.newsletter {
+  @include margin(6rem, 0, 6rem, 0);
+  text-align: center;
+  &-container {
+    @extend %container;
+  }
+  &-data {
+    @include margin(0, auto, 0, auto);
+    &-description {
+      @include margin(0, 0, 3rem, 0);
+      color: $text-color;
+    }
+    &-form {
+      background: $container-bg;
+      border-radius: 2rem;
+      padding: 2rem 0.8rem;
+      justify-content: space-evenly;
+      input {
+        width: 45%;
+        background: none;
+        border: none;
+        &::placeholder {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

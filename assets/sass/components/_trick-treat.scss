@@ -1,0 +1,52 @@
+@import "../base/mixins";
+@import "../layout/layout";
+.trick {
+  @include margin(0, 0, 6rem, 0);
+  text-align: center;
+  &-container {
+    @extend%container;
+    @include gridCols(3);
+    @media screen and (max-width: 768px) {
+      @include gridCols(2);
+    }
+    @media screen and (max-width: 425px) {
+      @include gridCols(1);
+    }
+  }
+  &-data {
+    position: relative;
+    overflow: hidden;
+    background: $container-bg;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    @include margin(0, 0, 2rem, 0);
+    &-title {
+      font-size: $fs-less-big-text;
+    }
+    &-subtitle {
+      color: $text-color;
+    }
+    img {
+      width: 100px;
+      @include margin(0, auto, 0, auto);
+    }
+    &-cart {
+      background: $main-color;
+      font-size: 1.3rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.2rem 0.2rem 1.5rem 0.2rem;
+      position: absolute;
+      right: -3rem;
+      bottom: 0rem;
+      transition: 0.5s all;
+    }
+    &:hover {
+      .trick-data-cart {
+        right: 0;
+      }
+      & img{
+        transform:translateY(-0.7rem);
+      }
+    }
+  }
+}

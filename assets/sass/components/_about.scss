@@ -1,0 +1,29 @@
+@import "../base/mixins";
+@import "../layout/layout";
+.about {
+  @include margin(0, 0, 6rem, 0);
+  text-align: left;
+  &-container {
+    @extend %container;
+    @include gridCols(2);
+    @media screen and (max-width: 768px) {
+      @include gridCols(1);
+      .about-data {
+        text-align: center;
+      }
+      .about-data:nth-of-type(2) {
+        @include margin(3rem, 0, 0, 0);
+      }
+      .about-data-description {
+        width: 100%;
+      }
+    }
+  }
+  &-data {
+    &-description {
+      @include margin(0, 0, 3rem, 0);
+      color: $text-color;
+      @include charactersWidth(40);
+    }
+  }
+}

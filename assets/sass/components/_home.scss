@@ -1,0 +1,65 @@
+@import "../base/mixins";
+@import "../layout/layout";
+.home {
+  @include margin(2rem, 0, 6rem, 0);
+  text-align: left;
+  &-container {
+    @extend%container;
+    @include gridCols(2);
+    @media screen and (max-width: 768px) {
+      @include gridCols(1);
+      .home-data {
+        text-align: center;
+        position: relative;
+      }
+      .home-description {
+        width: 100%;
+      }
+      .home-data:nth-of-type(1) {
+        .home-title {
+          position: absolute;
+          right: 0.5rem;
+          top: -1rem;
+        }
+        .home-subtitle {
+          position: absolute;
+          right: 0.5rem;
+          top: 1rem;
+        }
+      }
+      .home-buttons {
+        justify-content: space-evenly;
+      }
+    }
+  }
+  &-data:nth-of-type(1) {
+    position: relative;
+    .home-title {
+      font-size: $fs-normal-text;
+      line-height: normal;
+    }
+  }
+  &-title {
+    font-size: $fs-biggest-text;
+    font-weight: 900;
+    line-height: 3.8rem;
+    @include margin(1rem, 0, 1rem, 0);
+  }
+  &-subtitle {
+    color: $text-color;
+    @include margin(0, 0, 0, 0);
+  }
+  &-description {
+    color: $text-color;
+    @include margin(0, 0, 0, 0);
+  }
+  &-buttons {
+    @include margin(3rem, 0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    .bx-right-arrow-alt {
+      position: relative;
+      top: 0.1rem;
+    }
+  }
+}

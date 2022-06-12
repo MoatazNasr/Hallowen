@@ -1,0 +1,55 @@
+@import "../base/mixins";
+@import "../layout/layout";
+.new {
+  @include margin(0, 0, 6rem, 0);
+  text-align: center;
+  &-container {
+    @extend%container;
+  }
+  &-data {
+    background: $container-bg;
+    border-radius: 2rem;
+    padding: 1.5rem 0;
+    @include margin(0, 0, 2rem, 0);
+    img {
+      width: 100px;
+      @include margin(0, auto, 0, auto);
+    }
+    &::before {
+      content: "New";
+      background: $main-color;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+      position: absolute;
+      left: 1.2rem;
+    }
+    &-cart {
+      background: $main-color;
+      font-size: 1.3rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.2rem 0.2rem 1.5rem 0.2rem;
+      position: absolute;
+      right: -3rem;
+      bottom: 2rem;
+      transition: 0.5s right ;
+    }
+    &:hover {
+      .new-data-cart {
+        right: 0;
+      }
+      & img{
+        transform:translateY(-0.7rem);
+      }
+    }
+  }
+
+  &-data-title {
+    font-size: $fs-less-big-text;
+  }
+  &-data-price{
+    color: $main-color;
+  }
+  &-data-subtitle {
+    color: $text-color;
+  }
+}

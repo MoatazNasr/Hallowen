@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/sass/index.css" />
+    <meta name=description content="halloween website">
+    <title>Halloween</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header">
+      <nav class="nav">
+        <section class="nav-logo">
+          <img src="./assets/img/logo.png" alt="skull" class="logo-skull" />
+          <a href="#">Halloween</a>
+        </section>
+        <ul class="nav nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="#trick" class="nav-link">Candy</a>
+          </li>
+          <li class="nav-item">
+            <a href="#new" class="nav-link"> New </a>
+          </li>
+          <li class="nav-item">
+            <button class="button button-nav">Support</button>
+          </li>
+        </ul>
+        <button class="button-nav-add" id="button-nav-add">
+          <i class="bx bx-grid-alt"></i>
+        </button>
+        <button class="button-nav-remove" id="button-nav-remove">
+          <i class="bx bx-x"></i>
+        </button>
+        <img src="./assets/img/nav-img.png" alt="spider" class="logo-spider" />
+      </nav>
+    </header>
+    <!--==================== MAIN CONTENT ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home swiper homeSwiper" id="home">
+        <!-- swiper -->
+        <div class="swiper-wrapper">
+          <!-- slide 1 -->
+          <div class="swiper-slide">
+            <section class="home-container grid">
+              <div class="home-data">
+                <img src="./assets/img/home1-img.png" alt="pumpkin" />
+                <p class="home-title">The Labu "Reiza"</p>
+                <p class="home-subtitle">The Living Pumpkin</p>
+              </div>
+              <div class="home-data">
+                <h3>#1 TOP SCARIEST PUMPKIN</h3>
+                <h1 class="home-title">
+                  UOOOO
+                  <br />
+                  TRICK OR
+                  <br />
+                  TREAT!!
+                </h1>
+                <p class="home-description">
+                  Hi, I'm Reiza, people call me "El Labu". I am currently trying
+                  to learn something new, building my own bike with parts made
+                  only in Malaysia.
+                </p>
+                <div class="flex home-buttons">
+                  <a class="button" href="#home">Book Now</a>
+                  <a href="#home">Track Record <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide">
+            <section class="home-container grid">
+              <div class="home-data">
+                <img src="./assets/img/home2-img.png" alt="duo" class="duo" />
+                <p class="home-title">Adino & Grahami</p>
+                <p class="home-subtitle">No Words Can <br />Describe Them</p>
+              </div>
+              <div class="home-data">
+                <h3>#2 TOP BEST DUO</h3>
+                <h1 class="home-title">
+                  BRING BACK <br />
+                  MY COTTON <br />
+                  CANDY
+                </h1>
+                <p class="home-description">
+                  Adino steals cotton candy from his brother and eats them all
+                  in one bite, a hungry beast. Grahami can no longer contain his
+                  anger towards Adino.
+                </p>
+                <div class="flex home-buttons">
+                  <a class="button" href="#home">Book Now</a>
+                  <a href="#home">Track Record <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide">
+            <section class="home-container grid">
+              <div class="home-data">
+                <img src="./assets/img/home3-img.png" alt="ghost" />
+
+                <p class="home-title">Captain Sem</p>
+                <p class="home-subtitle">Veteran Spooky Ghost</p>
+              </div>
+              <div class="home-data">
+                <h3>#3 TOP SCARIEST GHOST</h3>
+                <h1 class="home-title">
+                  RESPAWN <br />
+                  THE SPOOKY <br />
+                  SKULL
+                </h1>
+                <p class="home-description">
+                  In search for cute little puppy, Captain Sem has come back
+                  from his tragic death. With his hogwarts certified power he
+                  promise to be a hero for all of ghostkind.
+                </p>
+                <div class="flex home-buttons">
+                  <a class="button" href="#home">Book Now</a>
+                  <a href="#home">Track Record <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!--==================== CATEGORY ====================-->
+      <section class="category">
+        <h2 class="section-title">Favorite Scare <br />Category</h2>
+        <div class="category-container grid">
+          <div class="category-data">
+            <img src="./assets/img/category1-img.png" alt="ghost" />
+            <h3 class="category-data-title">Ghosts</h3>
+            <p class="category-data-description">
+              Choose the ghosts, the scariest there are.
+            </p>
+          </div>
+          <div class="category-data">
+            <img src="./assets/img/category2-img.png" alt="pumpkin" />
+            <h3 class="category-data-title">Pumpkins</h3>
+            <p class="category-data-description">
+              You look at the scariest pumpkins there are.
+            </p>
+          </div>
+          <div class="category-data">
+            <img src="./assets/img/category3-img.png" alt="witchhat" />
+            <h3 class="category-data-title">Witch Hat</h3>
+            <p class="category-data-description">
+              Pick the most stylish witch hats out there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about" id="about">
+        <div class="grid about-container">
+          <div class="about-data">
+            <h2 class="section-title">
+              About Halloween <br />
+              Night
+            </h2>
+            <p class="about-data-description">
+              Night of all the saints, or all the dead, is celebrated on October
+              31 and it is a very fun international celebration, this
+              celebration comes from ancient origins, and is already celebrated
+              by everyone.
+            </p>
+            <a class="button">Know More</a>
+          </div>
+          <div class="about-data">
+            <img src="./assets/img/about-img.png" alt="flask of magic" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TRICK OR TREAT ====================-->
+      <section class="trick" id="trick">
+        <h2 class="section-title">Trick Or Treat</h2>
+        <div class="grid trick-container">
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat1-img.png" alt="toffee" />
+            <h3 class="trick-data-title">Toffee</h3>
+            <p class="trick-data-subtitle">Candy</p>
+            <p class="trick-data-price">$11.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat2-img.png" alt="bone" />
+            <h3 class="trick-data-title">Bone</h3>
+            <p class="trick-data-subtitle">Accessory</p>
+            <p class="trick-data-price">$8.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat3-img.png" alt="scarescrow" />
+            <h3 class="trick-data-title">Scarecrow</h3>
+            <p class="trick-data-subtitle">Accessory</p>
+            <p class="trick-data-price">$15.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat4-img.png" alt="candycane" />
+            <h3 class="trick-data-title">Candy Cane</h3>
+            <p class="trick-data-subtitle">Candy</p>
+            <p class="trick-data-price">$7.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat5-img.png" alt="pumpkin" />
+            <h3 class="trick-data-title">Pumpkin</h3>
+            <p class="trick-data-subtitle">Accessory</p>
+            <p class="trick-data-price">$19.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+          <div class="trick-data">
+            <img src="./assets/img/trick-treat6-img.png" alt="ghost" />
+            <h3 class="trick-data-title">Ghost</h3>
+            <p class="trick-data-subtitle">Accessory</p>
+            <p class="trick-data-price">$17.99</p>
+            <span class="trick-data-cart"><i class="bx bx-cart"></i></span>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== DISCOUNT ====================-->
+      <section class="discount">
+        <div class="grid discount-container">
+          <div class="discount-data">
+            <img src="./assets/img/discount-img.png" alt="discount-img" />
+          </div>
+          <div class="discount-data">
+            <h2 class="discount-data-title">
+              50% Discount <br />
+              On New Products
+            </h2>
+            <a class="button" href="#new">Go To New</a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEW ARRIVALS ====================-->
+      <section class="new swiper newSwiper new-container" id="new">
+        <h2 class="section-title">New Arrivals</h2>
+        <!-- <div class="grid new-container"> -->
+        <div class="swiper-wrapper">
+          <!-- slide 1 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new1-img.png" alt="hauntedhouse" />
+              <h3 class="new-data-title">Haunted House</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$14.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new2-img.png" alt="halloweencandy" />
+              <h3 class="new-data-title">Halloween Candle</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$11.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new3-img.png" alt="witchhat" />
+              <h3 class="new-data-title">Witch Hat</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$4.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new4-img.png" alt="toffee" />
+              <h3 class="new-data-title">Rip</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$24.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- slide 5 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new5-img.png" alt="toffee" />
+              <h3 class="new-data-title">Terrifying Crystal Ball</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$5.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- slide 6 -->
+          <div class="swiper-slide">
+            <div class="new-data">
+              <img src="./assets/img/new6-img.png" alt="toffee" />
+              <h3 class="new-data-title">Witch Broom</h3>
+              <p class="new-data-subtitle">Accessory</p>
+              <p class="new-data-price">$7.99</p>
+              <span class="new-data-cart"><i class="bx bx-cart"></i></span>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!--==================== OUR NEWSLETTER ====================-->
+      <section class="newsletter">
+        <h2 class="section-title">Our Newsletter</h2>
+
+        <div class="grid newsletter-container">
+          <div class="newsletter-data">
+            <p class="newsletter-data-description">
+              Promotion new products and sales.<br />
+              Directly to your inbox
+            </p>
+            <div class="flex newsletter-data-form">
+              <input type="text" placeholder="Enter your email" />
+              <a class="button">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="button-scrollUp" id="button-scrollUp">
+        <i class="bx bx-up-arrow-alt"></i>
+      </button>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <img src="./assets/img/footer2-img.png" alt="ghost1" class="footer-img" />
+      <div class="grid footer-container">
+        <div class="footer-data">
+          <div class="footer-logo">
+            <img src="./assets/img/logo.png" alt="skull" class="logo-skull" />
+            <h3>Halloween</h3>
+          </div>
+          <p>Enjoy the scariest night of your life.</p>
+          <a href="#" class="footer-data-socials"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#" class="footer-data-socials"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer-data-socials"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+        <div class="footer-data">
+          <h3>About</h3>
+          <ul>
+            <li class="footer-data-links"><a href="">Features</a></li>
+            <li class="footer-data-links"><a href="">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-data">
+          <h3>Our Services</h3>
+          <ul>
+            <li class="footer-data-links"><a href="">Pricing</a></li>
+            <li class="footer-data-links"><a href="">Discounts</a></li>
+            <li class="footer-data-links"><a href="">Shipping mode</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-data">
+          <h3>Our Company</h3>
+          <ul>
+            <li class="footer-data-links"><a href="">Blog</a></li>
+            <li class="footer-data-links"><a href="">Our mission</a></li>
+            <li class="footer-data-links"><a href="">Customer help</a></li>
+          </ul>
+        </div>
+      </div>
+      <img src="./assets/img/footer1-img.png" alt="ghost2" class="footer-img" />
+    </footer>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
